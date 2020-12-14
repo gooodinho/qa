@@ -1,0 +1,256 @@
+{
+  "id": "9ef64aa3-3abe-45fc-bdb0-8ff1f4baf36d",
+  "version": "2.0",
+  "name": "QA_Lab3.1",
+  "url": "https://kapkanshop.com/",
+  "tests": [{
+    "id": "7184bda8-3e21-4424-ac50-4b4909c6462c",
+    "name": "Add_item",
+    "commands": [{
+      "id": "fcc5703f-5fd3-4b0b-9972-0dea4c3e0437",
+      "comment": "",
+      "command": "open",
+      "target": "https://kapkanshop.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "123a0f16-4b07-4037-a417-2a080f379b6f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7b002df-e67f-439b-afed-e6616ddd007c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchbox-icon",
+      "targets": [
+        ["css=.searchbox-icon", "css:finder"],
+        ["xpath=//form[@id='search']/span", "xpath:idRelative"],
+        ["xpath=//form/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "018c25db-abfc-4abc-ac12-fe1bcf9cbb63",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.searchbox-input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Vans old skool"
+    }, {
+      "id": "5f3f319d-5768-4008-832e-539b405f7b14",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.searchbox-input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ae81f7f9-1036-466b-a66b-9f072b620e79",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"products-list\"]/div[1]/div/div[2]/div[1]",
+      "targets": [
+        ["css=.product-short-item-block:nth-child(1) > .product-short-item-sl > a", "css:finder"],
+        ["xpath=//div[@id='products-list']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://kapkanshop.com/deka-papa-power-plejstejshn-mid?search=Vans%20old%20skool')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": "Кеды Vans Old Skool (Primary Check) Black/White"
+    }, {
+      "id": "463390ee-f4b0-4e89-a338-6fa7a54b8ef2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-short-item-block:nth-child(1) > .product-short-item-sl > a",
+      "targets": [
+        ["css=.product-short-item-block:nth-child(1) > .product-short-item-sl > a", "css:finder"],
+        ["xpath=//div[@id='products-list']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://kapkanshop.com/deka-papa-power-plejstejshn-mid?search=Vans%20old%20skool')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec753657-f661-44e8-a3e7-d3bd0892674d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .iCheck-helper",
+      "targets": [
+        ["css=.hover > .iCheck-helper", "css:finder"],
+        ["xpath=//li[9]/div/ins", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f3a3724-2fc9-4f74-9f25-272d9df02b95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fast-btn1",
+      "targets": [
+        ["css=.fast-btn1", "css:finder"],
+        ["xpath=//a[contains(text(),'Добавить в корзину')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://kapkanshop.com/index.php?route=checkout/cart/add&product_id=4662')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c3493d1-4e38-4999-ad87-991f9d0f5c9f",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.searchbox-input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9cbeb37-9379-414c-aaed-32b315c667e7",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.searchbox-input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Vans old skool navy"
+    }, {
+      "id": "5c4934a6-9c61-4fca-b5a6-31e1d969e22e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.searchbox-input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9643648f-3134-4e10-b2fa-d181586a4093",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"products-list\"]/div[1]/div/div[2]/div[1]",
+      "targets": [],
+      "value": "Кеды Vans Old Skool Navy"
+    }, {
+      "id": "97adc415-b145-4c9a-b3d1-b4815e0621d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-short-item-sl > a",
+      "targets": [
+        ["css=.product-short-item-sl > a", "css:finder"],
+        ["xpath=//div[@id='products-list']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://kapkanshop.com/kedy-vans-old-skool-navy?search=Vans%20old%20skool%20navy')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dc7fdce-8c17-4467-a2d5-348570cf8105",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .iCheck-helper",
+      "targets": [
+        ["css=.hover > .iCheck-helper", "css:finder"],
+        ["xpath=//li[9]/div/ins", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9f0327a-6cfc-4068-8822-470733017108",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fast-btn1",
+      "targets": [
+        ["css=.fast-btn1", "css:finder"],
+        ["xpath=//a[contains(text(),'Добавить в корзину')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://kapkanshop.com/index.php?route=checkout/cart/add&product_id=249')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a20be921-24e3-4c68-89cd-a36b6e20aa99",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=КОРЗИНА 2",
+      "targets": [
+        ["linkText=КОРЗИНА 2", "linkText"],
+        ["css=.header-btn-cart > a", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://kapkanshop.com/cart')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'КОРЗИНА 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "177c721a-19bc-4a58-b5e5-27c45624fa78",
+    "name": "Check_cart",
+    "commands": [{
+      "id": "84c9b7d9-a48b-4168-a6a6-a10892835b2e",
+      "comment": "",
+      "command": "open",
+      "target": "https://kapkanshop.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd3fbf9e-ca4d-498c-a506-df2f7a7cd5f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af1a8ece-d516-4a61-865f-655b1b924794",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=КОРЗИНА 2",
+      "targets": [
+        ["linkText=КОРЗИНА 2", "linkText"],
+        ["css=.header-btn-cart > a", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://kapkanshop.com/cart')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'КОРЗИНА 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6debb9b-e978-42f4-bec7-601639cb4cee",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@class=\"grid-shopping-cart-item\"]/div[1]/div[2]/div[1]/div[2]/div[2]",
+      "targets": [],
+      "value": "Кеды Vans Old Skool Navy"
+    }, {
+      "id": "9c1b8ef1-a091-4e54-bb6a-2e8922a590dc",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@class=\"grid-shopping-cart-item\"]/div[1]/div[2]/div[2]/div[2]/div[2]",
+      "targets": [],
+      "value": "Кеды Vans Old Skool (Primary Check) Black/White"
+    }]
+  }],
+  "suites": [{
+    "id": "e6ba0af6-e9f6-458f-b8aa-523c34f94b2a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://kapkanshop.com/"],
+  "plugins": []
+}
